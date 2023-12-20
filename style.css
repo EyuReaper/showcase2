@@ -1,0 +1,122 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+}
+.nav-container {
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+  display: flex;
+  background-color: #3d4d99;
+  list-style-type: none;
+  top: 0;
+  position: fixed;
+  overflow: hidden;
+  transition: top 0.3s;
+}
+.nav-logo img {
+  line-height: 0;
+  float: left;
+  text-decoration: none;
+  position: relative;
+  height: 5em;
+  width: 15em;
+}
+.nav-link ul {
+  color: black;
+  margin-left: 1.5rem;
+  margin-right: 1.5rem;
+  padding: 1rem 3rem;
+  font-weight: 600px;
+}
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding-right: 15px;
+}
+li a {
+  display: block;
+  padding: 14px 16px;
+  text-align: center;
+  text-decoration: none;
+  color: white;
+  border: 1px solid transparent;
+}
+li {
+  display: inline;
+  float: left;
+  padding-right: 80px;
+}
+li a:hover:not(#active) {
+  background-color: black;
+  padding: 14px 16px;
+}
+#active {
+  background-color: #ff471f;
+}
+@media screen and (max-width: 900px) {
+  ul li img a,
+  .active .nav-link {
+    width: 100%;
+    height: auto;
+    position: relative;
+    display: block;
+  }
+  div.nav-container {
+    margin-left: 0;
+    float: right;
+  }
+}
+
+/*paralax section*/
+
+.paralax1 {
+  background-image: url(img/orangejumpsuits.jpg);
+  min-height: 500px;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.paralax2 {
+  background-image: url(img/lawyers.jpg);
+  min-height: 500px;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.paralax3 {
+  background-image: url(img/close-up-of-woman-spreading-arms-in-autumn-breeze.jpg);
+  min-height: 500px;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+h1 {
+  letter-spacing: -4px;
+  margin-top: 0;
+  margin-bottom: 0;
+  font-size: 7rem;
+  font-weight: 600;
+  line-height: 0.7;
+  margin: 0.67em 0;
+}
+
+/*footer property*/
+footer {
+  background-color: #777;
+  padding: 10px;
+  text-align: center;
+  color: white;
+}
+@media (max-width: 600px) {
+  nav {
+    width: 100%;
+    height: auto;
+  }
+}
